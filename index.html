@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Cotización Dolar</title>
+</head>
+<style>
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Baskervville', serif;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 99vh;
+    align-content: center;
+
+}
+.titulo{
+    color: rgb(243, 178, 13);
+}
+h1{
+    align-self: center;
+}
+
+input{
+    width: 13em;
+    height: 1.7em;
+    font-size: 1.3em;
+    border-radius: 20px;
+    text-align: center;
+}
+button{
+    background-color: white;
+    color: black;
+    font-size: 1.3em;
+    font-family: 'Baskervville', serif;
+    border: none;
+    border-radius: 20px;
+    padding: 1.2em;
+}
+
+button:hover{
+    background-color:  rgb(243, 178, 13);
+    color: black;
+    cursor: pointer;
+}
+h5{
+    font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+<body>
+    <h1>Cotizacion del Dollar <span class="titulo">Blue y Oficial</span></h1>
+    <form action="/dollar" method="GET">
+        <input type="text" placeholder="Fecha: aaaa-mm-dd" name="dia" required><br><br>
+        <button type="submit"> <strong> Valor Dolar </strong></button>
+    </form>
+    <h1>Mejor dia para comprar y vender Dolares </h1>
+    <h5>Ingrese un día específico en el formato que se indica y obtendrá el valor del dolar oficial y blue</h5>
+</body>
+</html>
